@@ -407,12 +407,6 @@ footer {
    padding-bottom: 0;
 }
 
-dl.param-type {
-  border-bottom: 1px solid hsl(0, 0%, 87%);
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
 .param-type dt, .param-type dd {
   display: inline-block
 }
