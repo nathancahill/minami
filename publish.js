@@ -318,6 +318,17 @@ function buildMemberNav(items, itemHeading, itemsSeen, linktoFn) {
                 }
 
                 itemsNav += '<li>' + linktoFn(item.longname, displayName.replace(/^module:/g, ''));
+                if (members.length) {
+                    itemsNav += "<ul class='members'>";
+
+                    members.forEach(function (member) {
+                        itemsNav += "<li data-type='member'>";
+                        itemsNav += linkto(member.longname, member.name);
+                        itemsNav += "</li>";
+                    });
+
+                    itemsNav += "</ul>";
+                }
                 if (methods.length) {
                     itemsNav += "<ul class='methods'>";
 
